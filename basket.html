@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background center">
+        <div class="header">
+            <a href="basket.html"><img src="image/logo.svg"></a>
+            <input placeholder="Поиск" class="header__search">
+            <div class="header__info">
+                <a href="travel.html" class="header__info_links">Главная</a>
+                <a href="catalog.html" class="header__info_links">Каталог</a>
+            </div>
+        </div>
+        <div class="main">
+            <h1 class="main__header">Корзина</h1>
+        </div>
+    </div>
+    <div class="cart center">
+        <div class="cart__content">
+            <div class="cart__header">
+                <p>Товар</p>
+                <p>Количество</p>
+            </div>
+            <!-- <div class="cart__main">
+                <div class="cart__info">
+                        <img class="cart__img" src="image/Rectangle 1.png">
+                        <div class="cart__text">
+                            <h1>Париж</h1>
+                            <p>9 дней | 12 дней с поездкой в Нормандию и Париж</p>
+                            <p class="cart__text_price">138 000 руб.</p>
+                        </div>
+                </div>
+                <input class="cart__input" type="number" min="1" value="1">
+            </div> -->
+        </div>
+        <form class="cart__right">
+            <p class="cart__right_header">Оформление заказа</p>
+            <div class="cart__form">
+                <input class="cart__element" placeholder="Имя Фамилия" type="text" required>
+                <input class="cart__element" placeholder="+ 7 904 000 80 80" type="text">
+                <input class="cart__element" placeholder="Адрес доставки" type="text" required>
+            </div>
+            <h1 class="cart__title"></h1>
+            <button class="cart__button">Оформить заказ</button>
+        </form>
+    </div>
+    <div class="click center">
+        <button class="click__buttons" id="clear_button">Очистить корзину</button>
+        <a href="catalog.html"><button class="click__buttons">Продолжить покупки</button></a>
+    </div>
+    <div class="product center">
+        <h1 class="product__header">Популярные направления</h1>
+        <div class="product__content">
+            <!-- <div class="card">
+                <img src="image/Rectangle 1.png" class="card__photo">
+                <h3 class="card__header">Париж</h3>
+                <p class="card__text">9 дней | 12 дней с поездкой в Нормандию и Париж</p>
+                <div class="card__price">
+                    <p class="card__price_actual">138 000 руб.</p>
+                    <p class="card__price_notactual">150 000 руб</p>
+                </div>
+                <button class="card__button">Выбрать</button>
+            </div>
+            <div class="card">
+                <img src="image/Rectangle 22.png" class="card__photo">
+                <h3 class="card__header">Италия, Манарола</h3>
+                <p class="card__text">12 дней | 14 дней с поездкой в Рим</p>
+                <div class="card__price">
+                    <p class="card__price_actual">175 000 руб.</p>
+                    <p class="card__price_notactual">190 000 руб</p>
+                </div>
+                <button class="card__button">Выбрать</button>
+            </div>
+            <div class="card">
+                <img src="image/Rectangle 22 (9).png" class="card__photo">
+                <h3 class="card__header">Италия, Рим</h3>
+                <p class="card__text">11 дней | 14 дней с поездкой в Мадрид</p>
+                <div class="card__price">
+                    <p class="card__price_actual">200 000 руб.</p>
+                    <p class="card__price_notactual">230 000 руб</p>
+                </div>
+                <button class="card__button">Выбрать</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="link center">
+        <a href="catalog.html" class="link">В каталог</a>
+    </div>
+        <div class="footer center">
+            <div class="footer__logo">
+                <a href="travel.html"><img src="image/logo.png"></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content__info">
+                    <div class="footer__content__info_itemNav">
+                        <p class="footer__content__info_header">Меню</p>
+                        <a href="travel.html" class="footer__content__info_links">Главная</a>
+                        <a href="catalog.html" class="footer__content__info_links">Каталог</a>
+                        <a href="basket.html" class="footer__content__info_links">Корзина</a>
+                    </div>
+                    <div class="footer__content__info_item">
+                        <p class="footer__content__info_header">Контакты</p>
+                        <p class="footer__content__info_links_email">+7 908 800 80 80</p>
+                        <a href="mailto:help@interier.com" class="footer__content__info_links">help@interier.com</a>
+                        <div class="footer__content__info_item_icons">
+                            <img src="image/instagram-fill 1.svg">
+                            <img src="image/twitter-fill 1.svg">
+                            <img src="image/facebook-fill 1.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="footer__form">
+                <p class="footer__form_text">Получайте наши новости и обновления</p>
+                <label><input class="footer__form_label" placeholder="Email Address" type="text" required></label>
+                <button class="footer__form_button">Подписаться</button>
+            </form>
+        </div>
+        <script src="js/basket_array.js"></script>
+        <script src="js/basket_card.js"></script>
+        <script src="js/basket.js"></script>
+        <script src="js/card.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@media(max-width: 1024px) {
+    .center {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .main__header {
+        font-size: 48px;
+        width: 408px;
+        padding-bottom: 16px;
+    }
+
+    .card {
+        width: 330px;
+    }
+
+    .header {
+        display: flex;
+    }
+}

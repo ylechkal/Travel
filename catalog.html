@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background center">
+        <div class="header">
+            <a href="catalog.html"><img src="image/logo.svg"></a>
+            <input placeholder="Поиск" class="header__search">
+            <div class="header__info">
+                <a href="travel.html" class="header__info_links">Главная</a>
+                <a href="basket.html" class="header__info_links">Корзина</a>
+            </div>
+        </div>
+        <div class="main">
+            <h1 class="main__header">Каталог</h1>
+        </div>
+    </div>
+    <div class="product center">
+        <div class="product__header">
+            <a class="product__link" href="travel.html">Главная</a>
+            
+            <a class="product__link" href="basket.html">Корзина</a>
+        </div>
+        <div class="product__content">
+            
+             <!-- <div class="card">
+                <img src="image/Rectangle 22.png" class="card__photo">
+                <h3 class="card__header">Италия, Манарола</h3>
+                <p class="card__text">12 дней | 14 дней с поездкой в Рим</p>
+                <div class="card__price">
+                    <p class="card__price_actual">175 000 руб.</p>
+                    <p class="card__price_notactual">190 000 руб</p>
+                </div>
+                <button class="card__button">Выбрать</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="footer center">
+        <div class="footer__logo">
+            <a href="travel.html"><img src="image/logo.png"></a>
+        </div>
+        <div class="footer__content">
+            <div class="footer__content__info">
+                <div class="footer__content__info_itemNav">
+                    <p class="footer__content__info_header">Меню</p>
+                    <a href="travel.html" class="footer__content__info_links">Главная</a>
+                    <a href="catalog.html" class="footer__content__info_links">Каталог</a>
+                    <a href="basket.html" class="footer__content__info_links">Корзина</a>
+                </div>
+                <div class="footer__content__info_item">
+                    <p class="footer__content__info_header">Контакты</p>
+                    <p class="footer__content__info_links_email">+7 908 800 80 80</p>
+                    <a href="mailto:help@interier.com" class="footer__content__info_links">help@interier.com</a>
+                    <div class="footer__content__info_item_icons">
+                        <img src="image/instagram-fill 1.svg">
+                        <img src="image/twitter-fill 1.svg">
+                        <img src="image/facebook-fill 1.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="footer__form">
+            <p class="footer__form_text">Получайте наши новости и обновления</p>
+            <label><input class="footer__form_label" placeholder="Email Address" type="text" required></label>
+            <button class="footer__form_button">Подписаться</button>
+        </form>
+    </div>
+    <script src="js/catalog.js"></script>
+    <script src="js/card_catalog.js"></script>
+</body>
+
+</html>

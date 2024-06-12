@@ -1,0 +1,414 @@
+@import "variables.scss";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color;
+}
+
+.background {
+    background-image: url("../image/bg.png");
+    height: 735px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.center {
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    border-bottom: 0.5px solid $color;
+
+
+    &__search {
+        border: 1px solid $color;
+        border-radius: 50px;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 260px;
+        height: 20px;
+        background-color: transparent;
+        outline: none;
+        color: $color;
+        font-family: Montserrat;
+        font-size: $text_sizes_header;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__search::placeholder {
+        color: $color;
+        font-family: Montserrat;
+        font-size: $text_sizes_header;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__search:focus::placeholder {
+        color: transparent;
+    }
+
+    &__search:focus {
+        border: solid 1.5px white;
+        border-radius: 50px;
+    }
+
+    &__search:hover {
+        background-color: #ffffff1d;
+    }
+
+    &__info {
+        display: flex;
+        gap: 32px;
+
+        &_links:hover {
+            color: #C4C4C4;
+        }
+    }
+
+}
+
+.header_phone {
+    display: none;
+}
+
+.main {
+
+    &__header {
+        color: $color;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 600;
+        width: 505px;
+    }
+
+    &__text {
+        color: $color;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 16px;
+        margin-bottom: 28px;
+    }
+
+    &__button {
+        border-radius: 12px;
+        background: #486A93;
+        width: 205px;
+        height: 55px;
+        border: none;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        color: $color;
+    }
+
+    &__button:hover {
+        background: #6B87A9;
+    }
+
+    &__button:active {
+        background: #0a3a75;
+        transform: scale(1.02);
+    }
+}
+
+h1 {
+    color: #486A93;
+    font-family: Montserrat;
+    font-size: 38px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.navigation__main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+
+    &_photo {
+        height: 415px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+        border-image: fill 0 linear-gradient(#0001, #292929e8);
+
+        &_1 {
+            background-image: url("../image/Rectangle\ 17.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &_2 {
+            background-image: url("../image/Rectangle\ 18.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &_3 {
+            background-image: url("../image/Rectangle\ 19.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &_4 {
+            background-image: url("../image/Rectangle\ 20.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &_5 {
+            background-image: url("../image/Rectangle\ 21.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &_big {
+            grid-column: span 3;
+        }
+    }
+
+    &_photo:hover {
+        transform: scale(1.1);
+        text-decoration: underline;
+    }
+}
+
+.product {
+    &__header {
+        padding-top: 52px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+
+        &_catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+    }
+
+
+}
+
+.card {
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 12px;
+    background: $bg_card;
+    transition: all 1s;
+
+    &__photo {
+        width: 100%;
+    }
+
+    &__header {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__text {
+        padding-bottom: 16px;
+        color: #888;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    &__price {
+        display: flex;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        gap: 24px;
+        padding-bottom: 26px;
+
+        &_actual {
+            color: black;
+        }
+
+        &_notactual {
+            color: #888;
+            text-decoration: line-through;
+        }
+    }
+
+    &__button {
+        width: 130px;
+        height: 40px;
+        border-radius: 12px;
+        background: #486A93;
+        border: none;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    &__button:hover {
+        background: #6B87A9;
+    }
+
+    &__button:active {
+        background: #0a3a75;
+        transform: scale(1.02);
+    }
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    display: flex;
+    height: 190px;
+    margin-top: 80px;
+    padding-top: 32px;
+    background: #F7F6F6;
+
+    &__logo {
+        padding-right: 100px;
+    }
+
+    &__content {
+
+        &__info {
+            display: flex;
+            gap: 80px;
+
+            &_itemNav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            &_header {
+                color: var(--376-aa-6, #486A93);
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            &_links {
+                display: flex;
+                color: #888;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 500;
+
+                &_email {
+                    display: flex;
+                    color: #888;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                &_email:hover {
+                    display: flex;
+                    color: #888;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+
+            &_links:hover {
+                color: #C4C4C4;
+            }
+
+            &_item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+
+    &__form {
+        margin-left: 100px;
+
+        &_text {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        &_label {
+            width: 290px;
+            height: 46px;
+            border: 2px solid #C4C4C4;
+            border-radius: 20px;
+            padding-left: 8px;
+            color: #C4C4C4;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        &_button {
+            border-radius: 20px;
+            background: #486A93;
+            width: 304px;
+            height: 52px;
+            border: none;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color;
+        }
+
+        &_button:hover {
+            background: #6B87A9;
+        }
+
+        &_button:active {
+            background: #0a3a75;
+            transform: scale(1.02);
+        }
+    }
+}
+
+@import "tablet_main";
+@import "phone_main";
